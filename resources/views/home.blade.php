@@ -4,7 +4,7 @@ Home
 @endsection
 @section('content')
 <section>
-    <p>asdasd</p>
+    <h1>layout and navbar is well done </h1>
 </section>
 @endsection
 
