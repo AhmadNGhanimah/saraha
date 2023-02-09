@@ -56,6 +56,14 @@ h6{
 .navbar-name .logo-name{
     color: white;
 }
+.navbar-saraha select{
+    border: none;
+    border-radius: 15px;
+}
+.navbar-saraha option{
+    border: none;
+    border-radius: 15px;
+}
 
 /*NavBar End Css */
 
