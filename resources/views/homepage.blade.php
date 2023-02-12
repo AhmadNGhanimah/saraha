@@ -3,8 +3,16 @@
 Home
 @endsection
 @section('content')
-<section>
-    <h1>layout and navbar is well done </h1>
-</section>
+    <div class="row">
+        <div class="col-lg-4">
+            @include('layouts.sidebar')
+        </div>
+      <div class="col-lg-8">
+          @include('messages')
+      </div>
+
+    </div>
+
+
 @endsection
 

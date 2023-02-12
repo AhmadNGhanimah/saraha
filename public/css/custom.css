@@ -1,6 +1,7 @@
 html,body{
     font-family: Roboto;
     scroll-behavior: smooth;
+    background: #f5f8fa;
 }
 h1{
     font-size: 32px;
@@ -67,6 +68,51 @@ h6{
 
 /*NavBar End Css */
 
+/*Start sidebar Css */
+.sidebar .imageProfile img{
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -73%);
+    position: absolute;
+
+}
+.sidebar .socialMediaLink{
+    line-height: 30px;
+}
+.sidebar .socialMediaLink a {
+    color: #0CC8C9;
+    font-size: 20px;
+    font-family: Roboto;
+
+}
+.maessages .input-hidden input{
+    width: 100%;
+}
+.maessages .replyMessages img {
+    width: 30px;
+    height: 30px;
+}
+.maessages .submitFormInput input{
+    width: 100%;
+    padding-top: 20px;
+}
+
+/*End sidebar Css*/
 /*Home Page Start */
 
 /*End Page Start */
+/*Start Contact-Us Css*/
+.form-contact-us .btnContactUs button{
+    color: #10bbb3;
+    border-color:#10bbb3 ;
+}
+.form-contact-us .btnContactUs button:hover{
+    background: #10bbb3;
+    color: white;
+    text-decoration: none;
+}
+.contact-us .container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/*End Contact-Us Css*/

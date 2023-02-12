@@ -9,6 +9,6 @@
 </div>
 
 @include('layouts.footer')
-@include('layouts.script')
+@extends('layouts.script')
 </body>
 </html>
