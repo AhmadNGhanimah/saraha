@@ -6,7 +6,7 @@
   <section class="contact-us pt-3">
       <div class="container">
           <h2>
-              You can contact us via the standard form
+              {{__('custom.welcome')}}
           </h2>
       </div>
   </section>

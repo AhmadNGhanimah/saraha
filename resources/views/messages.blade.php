@@ -50,7 +50,7 @@
 </section>
 
 @include('layouts.footer')
-@extends('layouts.script')
+@include('layouts.script')
 </body>
 </html>
 
