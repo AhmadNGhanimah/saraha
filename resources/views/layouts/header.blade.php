@@ -16,12 +16,17 @@
                     <a class="nav-link" href="{{route('contact-us')}}">Contact Us</a>
                 </li>
 
-                <select class="changelang">
+{{--                <select class="changelang">--}}
 {{--                    just for design--}}
-                    <option value="1" >Arabic</option>
-                    <option value="2">English</option>
-                </select>
+{{--                    <option value="1" >Arabic</option>--}}
+{{--                    <option value="2">English</option>--}}
+{{--                </select>--}}
 
+                @if(app()->getLocale()=='ar')
+                    <a href="{{route('lang','en')}}">EN</a>
+                @else
+                    <a href="{{route('lang','ar')}}">AR</a>
+                @endif
 
             </ul>
         </div>

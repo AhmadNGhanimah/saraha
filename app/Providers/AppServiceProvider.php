@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +25,24 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->Language();
+    }
+
+    protected function Language()
+    {
+        if (Cookie::has('lang')) {
+            $lang = Cookie::get('lang');
+            // Arabic Language
+            if ($lang == 'ar')
+                App::setlocale('ar');
+            // Hebrew Language
+            else if ($lang == 'en')
+                App::setlocale('en');
+
+            // Default Language
+            else
+                App::setlocale('ar');
+        } else
+            App::setlocale('ar');
     }
 }

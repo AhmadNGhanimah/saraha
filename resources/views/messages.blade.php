@@ -8,7 +8,7 @@
         <div>
             <div class="text-center">
                 <img src="">
-                <p> <i class="fa-solid fa-messages"></i>Messages</p>
+                <p> <i class="fa-solid fa-messages"></i>{{__('custom.welcome')}}</p>
             </div>
             <div>
                 <div class="alert alert-primary" role="alert">
