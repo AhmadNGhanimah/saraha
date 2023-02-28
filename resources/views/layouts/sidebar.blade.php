@@ -33,9 +33,9 @@
                     </div>
                     <div class="pt-2 socialMediaLink">
                         <label>To receive messages</label><br>
-                        <a href="" class="fa-brands fa-twitter"><span class="m-3">Share your account on Twitter</span></a><br>
-                        <a href="" class="fa-brands fa-facebook"><span class="m-3">Share your account on Facebook</span></a><br>
-                        <a href="" class="fa-solid fa-gear pt-3"><span class="m-3">Setting user</span></a><br>
+                        <a class="m-3" href="#"><i class="fa-brands fa-twitter"></i> Share your account on Twitter</a><br>
+                        <a class="m-3" href="#"><i class="fa-brands fa-facebook"></i> Share your account on Facebook</a><br>
+                        <a class="m-3" href="#"><i class="fa-solid fa-gear"></i> Setting user</a>
                     </div>
                 </div>
 

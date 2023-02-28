@@ -16,6 +16,8 @@ Route::view('messages','messages');
 Route::view('sidebar','layouts/sidebar');
 Route::view('contact-us','contact-us')->name('contact-us');
 Route::view('manage','manage')->name('manage');
+Route::view('header','layouts.header');
+
 
 
 Route::get('/lang/{Lang}',[App\Http\Controllers\HomeController::class,'ChangeLang'])->name('lang');

@@ -1,36 +1,87 @@
 @extends('layouts.master')
-
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <p> {{route('SendMessageView',Auth::user()->random)}}</p>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+<div class="row">
+    <div class="col-lg-4">
+        @include('layouts.sidebar')
+    </div>
+    <div class="col-lg-8">
+        <section class="maessages">
+            <div class="container-fluid">
+                <div>
+                    <div class="text-center namePageBody">
+                        <img src="">
+                        <p><i class="fa-regular fa-message"></i>Messages</p>
+                    </div>
+                    <div class="input-group mb-3 ">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" value="{{route('SendMessageView',Auth::user()->random)}}" id="myInput">
+                        <div class="input-group-append">
+                            <button class="btn shareWithFriends" onclick="myFunction()" type="button">Share With Friends</button>
                         </div>
-                    @endif
-                        @if (session('error'))
-                            <div class="alert alert-danger" role="alert">
-                                {{ session('error') }}
-                            </div>
-                        @endif
+                    </div>
+                    <div>
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading">Msg 1 </h4>
+                            @if($messages->count()>0)
+                                @foreach($messages as $message)
+                                    <div>
+                                        <p>{{$message->message}}</p>
+                                        <a href="{{route('favourite',$message->id)}}">@if($message->favourite)<i class="fa-solid fa-heart"></i> @else <i class="fa-regular fa-heart"></i> @endif</a>
+                                    </div>
+                                @endforeach
+                            @endif
+                            <small class="pb-3">{{$message->created_at}}</small>
+                            <hr>
 
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Make Primary
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="replyMessages">
+                                        <button onclick='addInput()' class="btn btn-success">Reply</button>
+                                        <a href="https://www.google.com/" title="share to facebook"><img src="{{asset('image/fb-icon.png')}}"></a>
+                                        <a href="https://www.google.com/" title="share to Twitter"><img src="{{asset('image/Twitter-logo.svg.png')}}"></a>
+                                    </div>
+                                </div>
 
-                    @foreach($messages as $message)
-                            <div>
-                                <p>{{$message->message}}</p>
-                                <a href="{{route('favourite',$message->id)}}">@if($message->favourite)<i class="fa-solid fa-heart"></i> @else <i class="fa-regular fa-heart"></i> @endif</a>
                             </div>
-                    @endforeach
+                            <form action="" method="">
+                                <div id='input-cont' class="submitFormInput pt-3" >
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
+
+        </section>
+
+
     </div>
+
 </div>
 @endsection
+<script>
+    function myFunction() {
+        // Get the text field
+        var copyText = document.getElementById("myInput");
+
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+
+        // Alert the copied text
+        alert("Copied the text: ");
+    }
+</script>

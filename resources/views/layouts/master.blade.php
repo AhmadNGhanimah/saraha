@@ -9,6 +9,8 @@
 </div>
 
 @include('layouts.footer')
-@extends('layouts.script')
+@section('headerr')
+
+@endsection
 </body>
 </html>

@@ -8,7 +8,12 @@
             <div class="col-lg-4">
                 @include('layouts.sidebar')
             </div>
+
             <div class="col-lg-6">
+                <div class="text-center">
+
+                    <h1>Account Setting</h1>
+                </div>
                 <div class="pt-4">
                     <i class="fa-solid fa-person-praying"><span class="pl-3">Deleted Account</span></i>
                 </div>
@@ -17,7 +22,7 @@
                     <form>
                         <p>You will lose all content and data on this account, such as incoming messages and photos
                         </p>
-                        <button type="submit" href="">Delete Account</button>
+                        <input type="submit" href="" class="btn btn-danger" value="Delete Account">
                     </form>
                 </div>
 
@@ -47,8 +52,8 @@
                     </div>
                     <div class="mb-3 row ">
                         <div class="col-sm-2 "></div>
-                        <div class="col-sm-10 col-sm-2 col-form-label">
-                            <button type="submit" class="btn btn-primary ">Submit</button>
+                        <div class="col-sm-10 col-sm-2 col-form-label ">
+                            <input type="submit" href="" class="btn changePassword" value="Change">
                         </div>
                     </div>
                 </form>
@@ -92,7 +97,7 @@
                     <div class="mb-3 row ">
                         <div class="col-sm-2 "></div>
                         <div class="col-sm-10 col-sm-2 col-form-label">
-                            <button type="submit" class="btn btn-primary ">Submit</button>
+                            <input type="submit" href="" class="btn changePassword" value="Save">
                         </div>
                     </div>
 
@@ -138,7 +143,7 @@
                         <div class="mb-3 row ">
                             <div class="col-sm-2 "></div>
                             <div class="col-sm-10 col-sm-2 col-form-label">
-                                <button type="submit" class="btn btn-primary ">Save</button>
+                                <input type="submit" href="" class="btn changePassword" value="Save">
                             </div>
                         </div>
 

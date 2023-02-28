@@ -5,10 +5,13 @@
 
 <section class="maessages">
     <div class="container-fluid">
+        <div class="text-center">
+            <h1>Messages</h1>
+        </div>
         <div>
             <div class="text-center">
                 <img src="">
-                <p> <i class="fa-solid fa-messages"></i>{{__('custom.welcome')}}</p>
+                <p><i class="fa-solid fa-messages"></i>{{__('custom.welcome')}}</p>
             </div>
             <div>
                 <div class="alert alert-primary" role="alert">
@@ -29,14 +32,16 @@
                         <div class="col-lg-6">
                             <div class="replyMessages">
                                 <button onclick='addInput()' class="btn btn-success">Reply</button>
-                                <a href="https://www.google.com/" title="share to facebook"><img src="{{asset('image/fb-icon.png')}}"></a>
-                                <a href="https://www.google.com/" title="share to Twitter"><img src="{{asset('image/Twitter-logo.svg.png')}}"></a>
+                                <a href="https://www.google.com/" title="share to facebook"><img
+                                        src="{{asset('image/fb-icon.png')}}"></a>
+                                <a href="https://www.google.com/" title="share to Twitter"><img
+                                        src="{{asset('image/Twitter-logo.svg.png')}}"></a>
                             </div>
                         </div>
 
                     </div>
                     <form action="" method="">
-                        <div id='input-cont' class="submitFormInput pt-3" >
+                        <div id='input-cont' class="submitFormInput pt-3">
 
                         </div>
                     </form>
@@ -50,7 +55,7 @@
 </section>
 
 @include('layouts.footer')
-@include('layouts.script')
+@include('layouts.footer-script')
 </body>
 </html>
 
@@ -60,9 +65,9 @@
     var inputCount = 0;
 
     // Call addInput() function on button click
-    function addInput(){
+    function addInput() {
         inputCount++; // Increment input count by one
-        if(inputCount>1){
+        if (inputCount > 1) {
 
             return;
         }
