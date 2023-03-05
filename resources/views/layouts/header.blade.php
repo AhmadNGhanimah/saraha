@@ -26,8 +26,11 @@
             </li>
             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
             @if(Auth::user())
+                <form action="{{route('logout') }}" method="post" id="logout-form">
+                    @csrf
+                </form>
                 <li class=" nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="{{ route('logout') }}"><i class="fa-solid fa-right-from-bracket"></i> Logout </a>
+                    <a class="nav-link" href="#" onclick="document.getElementById('logout-form').submit();"><i class="fa-solid fa-right-from-bracket"></i> Logout </a>
                 </li>
             @else
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
