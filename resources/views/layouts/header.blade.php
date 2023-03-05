@@ -4,7 +4,7 @@
 
 </style>
 <body>
-<nav class="navbar navbar-expand-md navbar-light" style="background: #10bbb3">
+<nav class="navbar navbar-expand-md navbar-light" style="background: #1E86AF;">
 
     <a class="navbar-brand" href="{{url('/home')}}" style="font-size: 20px"><img src="{{asset('image/LogoWebsite.png')}}"> Saraha</a>
 

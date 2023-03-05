@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background: #10bbb3">
+<nav class="navbar navbar-expand-lg navbar-light" style="background: #1E86AF;">
     <a class="navbar-brand" href="#">Saraha</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
