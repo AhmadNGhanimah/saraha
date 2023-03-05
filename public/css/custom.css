@@ -1,75 +1,90 @@
-html,body{
+html, body {
     font-family: Roboto;
     scroll-behavior: smooth;
     background: #f5f8fa;
 }
-h1{
+
+h1 {
     font-size: 32px;
 }
-h2{
+
+h2 {
     font-size: 24px;
 }
-h3{
+
+h3 {
     font-size: 18px;
 }
-h4{
+
+h4 {
     font-size: 16px;
 }
-h5{
+
+h5 {
     font-size: 14px;
 }
-h6{
+
+h6 {
     font-size: 12px;
 }
+
 /*NavBar Start Css */
 .start-header {
     opacity: 1;
     transform: translateY(0);
     padding: 20px 0;
     box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
-    -webkit-transition : all 0.3s ease-out;
-    transition : all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
+
 .start-header.scroll-on {
     box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
     padding: 10px 0;
-    -webkit-transition : all 0.3s ease-out;
-    transition : all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
-.start-header.scroll-on .navbar-brand img{
+
+.start-header.scroll-on .navbar-brand img {
     height: 24px;
-    -webkit-transition : all 0.3s ease-out;
-    transition : all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
-.navigation-wrap{
+
+.navigation-wrap {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    -webkit-transition : all 0.3s ease-out;
-    transition : all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
-.navbar{
+
+.navbar {
     padding: 0;
 }
-.navbar-brand img{
+
+.navbar-brand img {
     height: 28px;
     width: auto;
     display: block;
     filter: brightness(10%);
-    -webkit-transition : all 0.3s ease-out;
-    transition : all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
+
 .navbar-toggler {
     float: right;
     border: none;
     padding-right: 0;
 }
+
 .navbar-toggler:active,
 .navbar-toggler:focus {
     outline: none;
 }
+
 .navbar-light .navbar-toggler-icon {
     width: 24px;
     height: 17px;
@@ -78,35 +93,43 @@ h6{
     transition: all 300ms linear;
 }
 
-.navbar-light .navbar-toggler-icon:after{
+.navbar-light .navbar-toggler-icon:after {
     top: 8px;
 }
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
     transform: rotate(45deg);
 }
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
     transform: translateY(8px) rotate(-45deg);
 }
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
 }
-.nav-link{
+
+.nav-link {
     color: #ffffff !important;
     font-weight: 500;
     transition: all 200ms linear;
 }
-.nav-item:hover .nav-link{
-    color: #212121 !important;
+
+.nav-item:hover .nav-link {
+    color: #16222A !important;
 }
-.nav-item.active .nav-link{
+
+.nav-item.active .nav-link {
     color: #777 !important;
 }
+
 .nav-link {
     position: relative;
     padding: 5px 0 !important;
     display: inline-block;
 }
-.nav-item:after{
+
+.nav-item:after {
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -117,53 +140,64 @@ h6{
     opacity: 0;
     transition: all 200ms linear;
 }
-.nav-item:hover:after{
+
+.nav-item:hover:after {
     bottom: 0;
     opacity: 1;
 }
-.nav-item.active:hover:after{
+
+.nav-item.active:hover:after {
     opacity: 0;
 }
-.nav-item{
+
+.nav-item {
     position: relative;
     transition: all 200ms linear;
 }
+
 .name-of-logo {
     font-weight: bold;
-    color: white ;
+    color: white;
     font-size: 22px;
     line-height: 22px;
 }
+
 /*NavBar End Css */
 
 /*Start sidebar Css */
-.sidebar .imageProfile img{
+.sidebar .imageProfile img {
     width: 80px;
     height: 80px;
     transform: translate(-50%, -73%);
     position: absolute;
 
 }
-.sidebar .socialMediaLink{
+
+.sidebar .socialMediaLink {
     line-height: 30px;
 }
+
 .sidebar .socialMediaLink a {
     color: #1E86AF;;
     font-size: 20px;
     font-family: Roboto;
 
 }
-.maessages .input-hidden input{
+
+.maessages .input-hidden input {
     width: 100%;
 }
+
 .maessages .replyMessages img {
     width: 30px;
     height: 30px;
 }
-.maessages .submitFormInput input{
+
+.maessages .submitFormInput input {
     width: 100%;
     padding-top: 20px;
 }
+
 a.active {
     color: white !important;
     font-weight: 500;
@@ -176,34 +210,173 @@ a.active {
 
 /*End Page Start */
 /*Start Contact-Us Css*/
-.form-contact-us .btnContactUs button{
+.form-contact-us .btnContactUs button {
     color: #1E86AF;
-    border-color:#1E86AF ;
+    border-color: #1E86AF;
 }
-.form-contact-us .btnContactUs button:hover{
+
+.form-contact-us .btnContactUs button:hover {
     background: #1E86AF;
     color: white;
     text-decoration: none;
 }
-.contact-us .container{
+
+.contact-us .container {
     padding-left: 0px;
     padding-right: 0px;
 }
+
 /*End Contact-Us Css*/
 .center-login-center {
-    padding-top:15%;;
+    padding-top: 15%;;
 }
+
 .shareWithFriends {
     background-color: #1E86AF;
     color: white;
 }
-.maessages .namePageBody i{
+
+.maessages .namePageBody i {
     padding: 10px;
 }
+
 /*Start manage Css */
 .manage .changePassword {
-    background-color:#1E86AF ;
+    background-color: #1E86AF;
     color: white;
 }
 
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
 /*End manage Css*/
+/*FOOTER*/
+
+
+footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #1E86AF, #16222A);
+    background: linear-gradient(28deg, #1E86AF, #16222A);
+    color: white;
+    margin-top: 228px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+    padding-top: 2em;
+    color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.social-network a {
+    background-color: #F9F9F9;
+}
+

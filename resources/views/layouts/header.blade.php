@@ -4,7 +4,7 @@
 
 </style>
 <body>
-<nav class="navbar navbar-expand-md navbar-light" style="background: #1E86AF;">
+<nav class="navbar navbar-expand-md navbar-light" style=" background: linear-gradient(28deg, #16222A, #1E86AF); ">
 
     <a class="navbar-brand" href="{{url('/home')}}" style="font-size: 20px"><img src="{{asset('image/LogoWebsite.png')}}"> Saraha</a>
 
@@ -24,7 +24,7 @@
             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                 <a class="nav-link" href="{{route('contact-us')}}"><i class="fa-solid fa-phone"></i> Contact Us</a>
             </li>
-            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+
             @if(Auth::user())
                 <form action="{{route('logout') }}" method="post" id="logout-form">
                     @csrf
@@ -37,7 +37,7 @@
                     <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i> Login </a>
                 </li>
                 @endif
-                </li>
+
 
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     @if(app()->getLocale()=='ar')

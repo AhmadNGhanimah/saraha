@@ -10,9 +10,9 @@
             </div>
 
             <div class="col-lg-6">
-                <div class="text-center">
+                <div class="text-center pt-3">
 
-                    <h1>Account Setting</h1>
+                    <h1><i class="fa-solid fa-gear"></i>Account Setting</h1>
                 </div>
                 <div class="pt-4">
                     <i class="fa-solid fa-person-praying"><span class="pl-3">Deleted Account</span></i>

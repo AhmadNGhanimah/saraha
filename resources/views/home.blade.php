@@ -8,9 +8,8 @@
         <section class="maessages">
             <div class="container-fluid">
                 <div>
-                    <div class="text-center namePageBody">
-                        <img src="">
-                        <p><i class="fa-regular fa-message"></i>Messages</p>
+                    <div class="text-center namePageBody pt-3">
+                        <h1><i class="fa-regular fa-message"></i>Messages</h1>
                     </div>
                     <div class="input-group mb-3 ">
                         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" value="{{route('SendMessageView',Auth::user()->random)}}" id="myInput">
