@@ -1,18 +1,6 @@
 @extends('layouts.master')
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 
-    body {
-        background-color: #ffffff;
-        font-family: 'Roboto', sans-serif;
-        font-size: 12px;
-        line-height: 1.34;
-    }
-
-    .container-fluid.full-width {
-        padding-right: 0px!important;
-        padding-left: 0px!important;
-    }
 
     h1.logo {
         font-size: 4em;
