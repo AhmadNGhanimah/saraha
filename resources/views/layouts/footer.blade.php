@@ -1,7 +1,7 @@
 <footer id="footer" class="mainfooter" role="contentinfo">
     <div class="footer-middle">
         <div class="container">
-            <div class="row">
+            <div class="row  d-flex justify-content-center">
                 <div class="col-md-3 col-sm-6">
                     <!--Column1-->
                     <div class="footer-pad">
@@ -13,7 +13,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 hidden">
                     <!--Column1-->
                     <div class="footer-pad">
                         <h4>Heading 2</h4>
@@ -24,7 +24,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 hidden">
                     <!--Column1-->
                     <div class="footer-pad">
                         <h4>Heading 3</h4>
@@ -38,7 +38,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 ">
                     <h4>Follow Us</h4>
                     <ul class="social-network social-circle">
                         <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
