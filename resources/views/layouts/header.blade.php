@@ -11,9 +11,9 @@
         <ul class="navbar-nav ml-auto py-4 py-md-0">
 
             @auth
-            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                <a class="nav-link" href="{{route('manage')}}"><i class="fa-solid fa-gear"></i> Account Setting</a>
-            </li>
+{{--            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">--}}
+{{--                <a class="nav-link" href="{{route('manage')}}"><i class="fa-solid fa-gear"></i> Account Setting</a>--}}
+{{--            </li>--}}
             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                 <a class="nav-link" href="{{route('messages')}}"><i class="fa-solid fa-message"></i> Messages</a>
             </li>
@@ -33,10 +33,10 @@
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i> Login </a>
                 </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a class="nav-link" href="{{ route('register') }}"><i class="fa-solid fa-user-plus"></i> Register </a>
+                    </li>
                 @endauth
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="{{ route('register') }}"><i class="fa-solid fa-user-plus"></i> Register </a>
-                </li>
 
 
 {{--                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">--}}

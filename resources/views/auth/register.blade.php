@@ -39,18 +39,18 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
-                            <label for="profile_image"
-                                   class="col-md-4 col-form-label text-md-end">Profile Image (Optional)</label>
-                            <div class="col-md-6">
-                                <input type="file" class="form-control" name="profile_image" >
-                                @error('profile_image')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+{{--                        <div class="row mb-3">--}}
+{{--                            <label for="profile_image"--}}
+{{--                                   class="col-md-4 col-form-label text-md-end">Profile Image (Optional)</label>--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <input type="file" class="form-control" name="profile_image" >--}}
+{{--                                @error('profile_image')--}}
+{{--                                <span class="invalid-feedback" role="alert">--}}
+{{--                                        <strong>{{ $message }}</strong>--}}
+{{--                                    </span>--}}
+{{--                                @enderror--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                         <div class="row mb-3">
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
