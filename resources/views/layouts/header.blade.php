@@ -15,17 +15,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto py-4 py-md-0">
 
+            @auth
             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                 <a class="nav-link" href="{{route('manage')}}"><i class="fa-solid fa-gear"></i> Account Setting</a>
             </li>
             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                 <a class="nav-link" href="{{route('messages')}}"><i class="fa-solid fa-message"></i> Messages</a>
             </li>
+            @endauth
             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                 <a class="nav-link" href="{{route('contact-us')}}"><i class="fa-solid fa-phone"></i> Contact Us</a>
             </li>
 
-            @if(Auth::user())
+            @auth
                 <form action="{{route('logout') }}" method="post" id="logout-form">
                     @csrf
                 </form>
@@ -36,7 +38,7 @@
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i> Login </a>
                 </li>
-                @endif
+                @endauth
 
 
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
