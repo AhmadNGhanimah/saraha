@@ -1,8 +1,3 @@
-<style>
-
-
-
-</style>
 <body>
 <nav class="navbar navbar-expand-md navbar-light" style=" background: linear-gradient(28deg, #16222A, #1E86AF); ">
 
@@ -23,9 +18,9 @@
                 <a class="nav-link" href="{{route('messages')}}"><i class="fa-solid fa-message"></i> Messages</a>
             </li>
             @endauth
-            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                <a class="nav-link" href="{{route('contact-us')}}"><i class="fa-solid fa-phone"></i> Contact Us</a>
-            </li>
+{{--            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">--}}
+{{--                <a class="nav-link" href="{{route('contact-us')}}"><i class="fa-solid fa-phone"></i> Contact Us</a>--}}
+{{--            </li>--}}
 
             @auth
                 <form action="{{route('logout') }}" method="post" id="logout-form">
@@ -40,31 +35,23 @@
                 </li>
                 @endauth
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="{{ route('register') }}"><i class="fa-regular fa-registered"></i> Register </a>
+                    <a class="nav-link" href="{{ route('register') }}"><i class="fa-solid fa-user-plus"></i> Register </a>
                 </li>
 
 
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    @if(app()->getLocale()=='ar')
-                        <a href="{{route('lang','en')}}" class="nav-link"><i class="fa-solid fa-globe"></i> EN</a>
-                    @else
-                        <a href="{{route('lang','ar')}}" class="nav-link"><i class="fa-solid fa-globe"></i> AR</a>
-                    @endif
-                </li>
+{{--                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">--}}
+{{--                    @if(app()->getLocale()=='ar')--}}
+{{--                        <a href="{{route('lang','en')}}" class="nav-link"><i class="fa-solid fa-globe"></i> EN</a>--}}
+{{--                    @else--}}
+{{--                        <a href="{{route('lang','ar')}}" class="nav-link"><i class="fa-solid fa-globe"></i> AR</a>--}}
+{{--                    @endif--}}
+{{--                </li>--}}
         </ul>
     </div>
 
 </nav>
 
 </body>
-
-<script>
-    for (var i = 0; i < document.links.length; i++) {
-        if (document.links[i].href == document.URL) {
-            document.links[i].className = 'active';
-        } else {document.links[0].className = 'active';}
-    }
-</script>
 
 @yield('headerr')
 
