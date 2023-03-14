@@ -399,16 +399,17 @@ ul.social-network li {
 @media screen and (max-width: 675px ) {
    footer{
        background: linear-gradient(28deg, #1E86AF, #16222A);
-       position: fixed;
+       position: relative;
        left: 0;
-       bottom: 0;
+       top: 23vh;
        width: 100%;
        color: white;
        text-align: center;
+   }
    }
     .mainfooter .hidden {
         display: none;
     }
 
-}
+
 
