@@ -27,6 +27,20 @@ h5 {
 h6 {
     font-size: 12px;
 }
+:root{
+    --main-color:linear-gradient(28deg, #16222A, #1E86AF);
+}
+.theme-color{
+    background: var(--main-color);
+    color: white;
+}
+.theme-color-text{
+    color: var(--main-color);
+}
+.login .buttonlogin button{
+    color: white;
+}
+
 
 /*NavBar Start Css */
 .start-header {
@@ -161,6 +175,20 @@ h6 {
     font-size: 22px;
     line-height: 22px;
 }
+.navbar .logo img {
+
+    height: 20px;
+}
+.navbar .logo a{
+    font-size: 20px;
+    padding-left: 14px;
+    color: white;
+}
+.navbar .logo a:hover{
+    font-size: 20px;
+    padding-left: 14px;
+    color: white;
+}
 
 /*NavBar End Css */
 
@@ -246,33 +274,21 @@ a.active {
     color: white;
 }
 
-.footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
-}
+
 
 /*End manage Css*/
 /*FOOTER*/
 
 
 footer {
-    background: #16222A;
-    background: -webkit-linear-gradient(59deg, #1E86AF, #16222A);
+
+
     background: linear-gradient(28deg, #1E86AF, #16222A);
-    color: white;
-    /* margin-top: 228px; */
-    position: relative;
-    top: 0px;
-    right: 0;
-    bottom: 0;
+    position: fixed;
     left: 0;
-    padding: 1rem;
-    background-color: #efefef;
+    bottom: 0;
+    width: 100%;
+    color: white;
     text-align: center;
 }
 
@@ -283,7 +299,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #FA944B;
+    color: #16222A;
     text-decoration: none;
 }
 
@@ -323,7 +339,7 @@ ul.social-network li {
 }
 
 .social-network a.icoLinkedin:hover {
-    background-color: #007bb7;
+    background-color: #4f5bd5 ;
 }
 
 .social-network a.icoFacebook:hover i,
@@ -379,5 +395,11 @@ ul.social-network li {
 
 .social-network a {
     background-color: #F9F9F9;
+}
+@media screen and (max-width: 675px ) {
+   footer{
+       position:relative;
+   }
+
 }
 

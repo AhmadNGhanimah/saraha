@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container">
+<div class="container registar p-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -74,9 +74,9 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
+                        <div class="row mb-0 registarButton">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn theme-color">
                                     {{ __('Register') }}
                                 </button>
                             </div>

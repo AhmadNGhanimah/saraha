@@ -1,4 +1,3 @@
-
 <footer id="footer" class="mainfooter" role="contentinfo">
     <div class="footer-middle">
         <div class="container">
@@ -42,14 +41,14 @@
                 <div class="col-md-3">
                     <h4>Follow Us</h4>
                     <ul class="social-network social-circle">
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 copy">
-                    <p class="text-center">&copy; Copyright 2018 - Company Name.  All rights reserved.</p>
+                    <p class="text-center">&copy; Copyright 2023 - Saraha.  All rights reserved.</p>
                 </div>
             </div>
 

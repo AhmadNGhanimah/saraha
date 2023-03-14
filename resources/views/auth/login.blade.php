@@ -47,7 +47,7 @@
 
 </style>
 @section('content')
-    <div class="container">
+    <div class="container login p-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -97,14 +97,14 @@
                                 </div>
                             </div>
 
-                            <div class="row mb-0">
+                            <div class="row mb-0 buttonlogin">
                                 <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn theme-color">
                                         {{ __('Login') }}
                                     </button>
 
                                     @if (Route::has('password.request'))
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        <a class="btn theme-color-text" href="{{ route('password.request') }}">
                                             {{ __('Forgot Your Password?') }}
                                         </a>
                                     @endif

@@ -11,7 +11,7 @@
                     <div class="input-group mb-3 ">
                         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" value="{{route('SendMessageView',Auth::user()->random)}}" id="myInput">
                         <div class="input-group-append">
-                            <button class="btn shareWithFriends" onclick="myFunction()" type="button">Share With Friends</button>
+                            <button class="btn theme-color" onclick="myFunction()" type="button">Share With Friends</button>
                         </div>
                     </div>
                     @if($messages->count()>0)
@@ -53,6 +53,6 @@
         navigator.clipboard.writeText(copyText.value);
 
         // Alert the copied text
-        alert("Copied the text: ");
+        alert("The Text Copied ");
     }
 </script>
