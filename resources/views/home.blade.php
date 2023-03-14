@@ -16,7 +16,7 @@
                     </div>
                     @if($messages->count()>0)
                         @foreach($messages as $message)
-                            <div class="card">
+                            <div class="card mb-2">
                                 <div class="card-body">
                                     {{$message->message}}
                                     <div>
