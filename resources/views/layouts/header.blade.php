@@ -3,7 +3,7 @@
 
    <div class="d-flex justify-content-start logo">
        <img src="{{asset('image/LogoWebsite.png')}}">
-       <a class="navbar-brand" href="{{url('/home')}}" style="font-size: 20px"> Saraha</a>
+       <a class="navbar-brand" href="{{url('/home')}}" style="font-size: 20px"> @lang('custom.saraha')</a>
    </div>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@
 {{--                <a class="nav-link" href="{{route('manage')}}"><i class="fa-solid fa-gear"></i> Account Setting</a>--}}
 {{--            </li>--}}
             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                <a class="nav-link" href="{{route('messages')}}"><i class="fa-solid fa-message"></i> Messages</a>
+                <a class="nav-link" href="{{route('messages')}}"><i class="fa-solid fa-message"></i> @lang('custom.messages')</a>
             </li>
             @endauth
 {{--            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">--}}
@@ -30,14 +30,14 @@
                     @csrf
                 </form>
                 <li class=" nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="#" onclick="document.getElementById('logout-form').submit();"><i class="fa-solid fa-right-from-bracket"></i> Logout </a>
+                    <a class="nav-link" href="#" onclick="document.getElementById('logout-form').submit();"><i class="fa-solid fa-right-from-bracket"></i>@lang('custom.logout') </a>
                 </li>
             @else
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i> Login </a>
+                    <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-right-from-bracket"></i>@lang('custom.Login')</a>
                 </li>
                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                        <a class="nav-link" href="{{ route('register') }}"><i class="fa-solid fa-user-plus"></i> Register </a>
+                        <a class="nav-link" href="{{ route('register') }}"><i class="fa-solid fa-user-plus"></i> @lang('custom.register') </a>
                     </li>
                 @endauth
 

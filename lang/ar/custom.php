@@ -14,5 +14,28 @@ return [
     */
 
     'welcome'=>'مرحبا',
+    'Login'=>'تسجيل الدخول',
+    'email_adress'=>'البريد الإلكتروني',
+    'remember_me'=>'تذكرنى',
+    'forgotYourPassword'=>'نسيت كلمة السر',
+    'sendPasswordReset'=>'نسيت كلمة السر',
+    'resetPassword'=>'إعادة تعيين كلمة المرور',
+    'weCantFind'=>'لا يمكننا العثور على مستخدم بعنوان البريد الإلكتروني هذا.',
+    'messages'=>'رسائل',
+    'shareFriends'=>'شارك مع الاصدقاء',
+    'theTextCopied '=>'تم نسخ الرابط',
+    'theMessageFor'=>'الرسالة ل',
+    'send'=>'ارسال',
+    'done'=>'انتهى',
+    'saraha'=>'صراحة',
+    'logout'=>'تسجيل خروج',
+    'register'=>'تسجيل',
+    'password'=>'كلمة المرور',
+    'name' => 'الاسم',
+    'confirm_password' => 'تأكيد كلمة المرور',
+    'these_credentials' => 'أوراق الاعتماد هذه لا تتطابق مع سجلاتنا.',
+
+
+
 
 ];

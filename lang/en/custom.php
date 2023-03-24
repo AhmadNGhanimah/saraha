@@ -13,6 +13,27 @@ return [
     |
     */
 
-    'welcome'=>'Welcome',
+    'welcome' => 'Welcome',
+    'Login' => 'Login',
+    'email_adress' => 'Email Address',
+    'remember_me' => 'Remember Me',
+    'forgotYourPassword' => 'Forgot Your Password',
+    'sendPasswordReset' => 'Send Password Reset Link',
+    'resetPassword' => 'Reset Password',
+    'weCantFind' => 'We cant find a user with that email address.',
+    'messages' => 'Messages',
+    'shareFriends' => 'Messages',
+    'theTextCopied ' => 'The Text Copied ',
+    'theMessageFor' => 'The Message For',
+    'send' => 'Send',
+    'done' => 'Done',
+    'saraha' => 'Saraha',
+    'logout' => 'Logout',
+    'password' => 'Password',
+    'confirm_password' => 'ConfirmPassword',
+    'register' => 'register',
+    'name' => 'Name',
+    'these_credentials' => 'These credentials do not match our records.',
+
 
 ];
