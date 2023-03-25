@@ -1,4 +1,8 @@
 @extends('layouts.master')
+@section('title' )
+    @lang('custom.messages')
+
+@endsection
 @section('content')
 <div class="row">
     <div class="col-lg-12">
