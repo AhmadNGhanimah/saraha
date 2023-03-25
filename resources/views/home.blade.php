@@ -6,12 +6,12 @@
             <div class="container-fluid">
                 <div>
                     <div class="text-center namePageBody pt-3">
-                        <h1><i class="fa-regular fa-message"></i>Messages</h1>
+                        <h1><i class="fa-regular fa-message"></i>@lang('custom.messages')</h1>
                     </div>
                     <div class="input-group mb-3 ">
                         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" value="{{route('SendMessageView',Auth::user()->random)}}" id="myInput">
                         <div class="input-group-append">
-                            <button class="btn theme-color" onclick="myFunction()" type="button">Share With Friends</button>
+                            <button class="btn theme-color" onclick="myFunction()" type="button">@lang('custom.shareFriends')</button>
                         </div>
                     </div>
                     @if($messages->count()>0)
