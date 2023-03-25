@@ -1,12 +1,12 @@
 @extends('layouts.master')
 @section('title')
-    Home
+    {{__('custom.messages')}}
 @endsection
 @section('content')
   <section class="contact-us pt-3">
       <div class="container">
-          <h2>
-              {{__('custom.welcome')}}
+          <h2 class="text-center">
+              {{__('custom.msg_desc')}}
           </h2>
       </div>
   </section>
@@ -18,16 +18,17 @@
   @endif
 
   {{$user->profile_image}}
-    <hr class="container">
+    <hr class="container mb-3">
     <section class="form-contact-us container">
         <form action="{{route('SentMessage',$user->random)}}" method="post">
             @csrf
-            <div class="form-group">
-                <label for="exampleInputEmail1">The Message For {{$user->name}}</label>
+            <div class="form-group text-center">
+                <p>{{__('custom.send_user')}}</p>
+                <label for="exampleInputEmail1">{{$user->name}}</label>
                 <textarea class="form-control" name="message" id="exampleInputEmail1" ></textarea>
             </div>
             <div class="text-center btnContactUs">
-                <button type="submit" class="btn btn-link border">Send</button>
+                <button type="submit" class="btn btn-link border">{{__('custom.send')}}</button>
             </div>
         </form>
 

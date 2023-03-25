@@ -21,7 +21,7 @@ return [
     'sendPasswordReset'=>'نسيت كلمة السر',
     'resetPassword'=>'إعادة تعيين كلمة المرور',
     'weCantFind'=>'لا يمكننا العثور على مستخدم بعنوان البريد الإلكتروني هذا.',
-    'messages'=>'رسائل',
+    'messages'=>'الرسائل',
     'shareFriends'=>'شارك مع الاصدقاء',
     'theTextCopied '=>'تم نسخ الرابط',
     'theMessageFor'=>'الرسالة ل',
@@ -34,8 +34,9 @@ return [
     'name' => 'الاسم',
     'confirm_password' => 'تأكيد كلمة المرور',
     'these_credentials' => 'أوراق الاعتماد هذه لا تتطابق مع سجلاتنا.',
-
-
+    'title'=>'Dark4Chat',
+    'msg_desc'=>'هل تعتقد أن الرسائل المجهولة قد تحمل رسائل مخفية؟',
+    'send_user'=>':أرسل رسالتك الى',
 
 
 ];

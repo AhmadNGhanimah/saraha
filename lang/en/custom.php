@@ -22,7 +22,7 @@ return [
     'resetPassword' => 'Reset Password',
     'weCantFind' => 'We cant find a user with that email address.',
     'messages' => 'Messages',
-    'shareFriends' => 'Messages',
+    'shareFriends' => 'The Messages',
     'theTextCopied ' => 'The Text Copied ',
     'theMessageFor' => 'The Message For',
     'send' => 'Send',
@@ -34,6 +34,7 @@ return [
     'register' => 'register',
     'name' => 'Name',
     'these_credentials' => 'These credentials do not match our records.',
-
-
+    'title'=>'Dark4Chat',
+    'msg_desc'=>'Do you think that anonymous messages may carry hidden messages?',
+    'send_user'=>'Send Your Message For:',
 ];

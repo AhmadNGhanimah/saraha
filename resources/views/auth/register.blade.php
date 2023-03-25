@@ -1,5 +1,7 @@
 @extends('layouts.master')
-
+@section('title' )
+    @lang('custom.register')
+@endsection
 @section('content')
 <div class="container registar p-5">
     <div class="row justify-content-center">
