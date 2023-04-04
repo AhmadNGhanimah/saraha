@@ -106,6 +106,26 @@
                                         @lang('custom.Login') @endlang
                                     </button>
 
+                                    <div class="auth__social-media">
+                                        <p>
+                                            <span> أو استخدم إحدى هذه الخيارات</span>
+                                        </p>
+                                        <div class="sites">
+                                            <a href="{{route('social_login','google')}}">
+                                    <span>
+                                        المتابعة باستخدام حساب Google
+                                    </span>
+                                                <img src="{{asset('/assets/images/icons/google.png')}}" alt="google">
+                                            </a>
+                                            <a href="{{route('social_login','facebook')}}">
+                                   <span>
+                                        المتابعة باستخدام حساب Facebook
+                                    </span>
+                                                <img src="{{asset('/assets/images/icons/facebook.png')}}" alt="facebook">
+                                            </a>
+                                        </div>
+                                    </div>
+
                                     @if (Route::has('password.request'))
                                         <a class="btn theme-color-text" href="{{ route('password.request') }}">
                                           @lang('custom.forgotYourPassword')

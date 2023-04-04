@@ -41,13 +41,13 @@
                 @endauth
 
 
-{{--                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">--}}
-{{--                    @if(app()->getLocale()=='ar')--}}
-{{--                        <a href="{{route('lang','en')}}" class="nav-link"><i class="fa-solid fa-globe"></i> EN</a>--}}
-{{--                    @else--}}
-{{--                        <a href="{{route('lang','ar')}}" class="nav-link"><i class="fa-solid fa-globe"></i> AR</a>--}}
-{{--                    @endif--}}
-{{--                </li>--}}
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    @if(app()->getLocale()=='ar')
+                        <a href="{{route('lang','en')}}" class="nav-link"><i class="fa-solid fa-globe"></i> EN</a>
+                    @else
+                        <a href="{{route('lang','ar')}}" class="nav-link"><i class="fa-solid fa-globe"></i> AR</a>
+                    @endif
+                </li>
         </ul>
     </div>
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SocialController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -11,6 +12,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 
 Route::get('/user/{UserID}',[App\Http\Controllers\HomeController::class,'SendMessage'])->name('SendMessageView');
 Route::post('/user/{UserID}',[App\Http\Controllers\HomeController::class,'SentMessage'])->name('SentMessage');
+
+Route::get('login/redirect/{provider}', [SocialController::class,'Redirect'])->name('social_login');
+Route::get('login/callback/{provider}', [SocialController::class,'Callback']);
+
+
+// Change Language
+Route::get('language/{Lang}',[\App\Http\Controllers\HomeController::class,'ChangeLang'])->name('lang');
 
 //Route::view('messages','messages');
 //Route::view('sidebar','layouts/sidebar');
