@@ -2,8 +2,8 @@ html, body {
     font-family: Roboto;
     scroll-behavior: smooth;
     background: #f5f8fa;
-    direction: ltr;
-    text-align: left;
+    direction: rtl;
+    text-align: right !important;
 }
 
 h1 {
@@ -56,6 +56,15 @@ h6 {
     box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+}
+
+.form-check-input {
+    position: unset !important;
+    margin-left: 0 !important;
+}
+
+.loginCustom .card-header span {
+    float: right;
 }
 
 .start-header.scroll-on {
@@ -293,8 +302,8 @@ footer {
 
     background: linear-gradient(28deg, #1E86AF, #16222A);
     position: relative;
-    left: 0;
     top: 50px;
+    left: 0;
     bottom: 0;
     width: 100%;
     color: white;
@@ -405,20 +414,6 @@ ul.social-network li {
 .social-network a {
     background-color: #F9F9F9;
 }
-.pageWelcome .staticImage img {
-    background-size: cover;
-    width: 700px;
-    height: 480px;
-    border-radius: 20px;
-
-}
-.pageWelcome .sliderImage img {
-    background-size: cover;
-    width: 700px;
-    height: 480px;
-    border-radius: 20px;
-
-}
 
 @media screen and (max-width: 675px ) {
     footer {
@@ -487,7 +482,7 @@ ul.social-network li {
     text-align: center;
     color: white;
 
-    background: linear-gradient(28deg, #1E86AF, #16222A);
+    background: linear-gradient(28deg, #16222A, #1E86AF);
 
 }
 

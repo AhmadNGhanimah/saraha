@@ -51,10 +51,12 @@
 </style>
 @section('content')
     <div class="container login p-5">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center loginCustom">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('custom.Login') }}</div>
+                    <div class="card-header">
+                        <span>{{ __('custom.Login') }}</span>
+                    </div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
@@ -99,40 +101,40 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row mb-0 buttonlogin">
                                 <div class="col-md-8 offset-md-4">
                                     <button type="submit" class="btn theme-color">
                                         @lang('custom.Login') @endlang
                                     </button>
 
-                                    <div class="auth__social-media">
-                                        <p>
-                                            <span> أو استخدم إحدى هذه الخيارات</span>
-                                        </p>
-                                        <div class="sites">
-                                            <a href="{{route('social_login','google')}}">
-                                    <span>
-                                        المتابعة باستخدام حساب Google
-                                    </span>
-                                                <img src="{{asset('/assets/images/icons/google.png')}}" alt="google">
-                                            </a>
-                                            <a href="{{route('social_login','facebook')}}">
-                                   <span>
-                                        المتابعة باستخدام حساب Facebook
-                                    </span>
-                                                <img src="{{asset('/assets/images/icons/facebook.png')}}" alt="facebook">
-                                            </a>
-                                        </div>
-                                    </div>
-
                                     @if (Route::has('password.request'))
                                         <a class="btn theme-color-text" href="{{ route('password.request') }}">
-                                          @lang('custom.forgotYourPassword')
+                                            @lang('custom.forgotYourPassword')
                                         </a>
                                     @endif
                                 </div>
                             </div>
+                            <div class="auth__social-media">
+                                <p>
+                                    <span> أو استخدم إحدى هذه الخيارات</span>
+                                </p>
+                                <div class="sites">
+                                    <a href="{{route('social_login','google')}}">
+                                    <span>
+                                        المتابعة باستخدام حساب Google
+                                    </span>
+                                        <img src="{{asset('/assets/images/icons/google.png')}}" alt="google">
+                                    </a>
+                                    <a href="{{route('social_login','facebook')}}">
+                                   <span>
+                                        المتابعة باستخدام حساب Facebook
+                                    </span>
+                                        <img src="{{asset('/assets/images/icons/facebook.png')}}" alt="facebook">
+                                    </a>
+                                </div>
+                            </div>
+
+
                         </form>
                     </div>
                 </div>
