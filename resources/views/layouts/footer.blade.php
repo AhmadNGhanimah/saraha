@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-3 ">
-                    <h4>Follow Us</h4>
+                    <h4>@lang('custom.follow_us')</h4>
                     <ul class="social-network social-circle">
                         <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
                         <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa-brands fa-instagram"></i></a></li>

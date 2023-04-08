@@ -64,7 +64,7 @@ return [
     'your_concerns'=>'Your concerns and fears regarding data confidentiality and privacy is a highly valuable thing to us. We hope that we will address these concerns by this policy.',
     'Required_Data'=>'Required Data to do the necessary procedures from your side',
     'when_you'=>'When we need any data from you. We will ask you for your consent. As this data will help us contact you and satisfy your orders whenever possible. We will never sell the data you provide to any third party as part of personal marketing without your prior and written consent unless t was a part of bulk data used for statistics and research and it won\'t contain any data to identify you. ',
-
+    'follow_us'=>'Follow Us',
 
 //    ----------------Privacy End
 

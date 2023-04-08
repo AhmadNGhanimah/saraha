@@ -1,8 +1,8 @@
 <body>
-<nav class="navbar navbar-expand-md navbar-light" style=" background: linear-gradient(28deg, #16222A, #1E86AF); ">
+<nav class="navbar navbar-expand-md navbar-light" >
 
    <div class="d-flex justify-content-start logo">
-       <a href="{{url('/home')}}" style="font-size: 20px"> <img src="{{asset('image/LogoWebsite.png')}}" alt="logo"></a>
+       <a href="{{url('/home')}}"> <img src="{{asset('image/LogoWebsite.png')}}" alt="logo"></a>
    </div>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

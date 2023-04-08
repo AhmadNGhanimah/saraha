@@ -24,10 +24,10 @@
             @csrf
             <div class="form-group text-center">
                 <p>{{__('custom.send_user')}}</p>
-                <label for="exampleInputEmail1">{{$user->name}}</label>
+                <label for="exampleInputEmail1" class="text-capitalize">{{$user->name}}</label>
                 <textarea class="form-control" name="message" id="exampleInputEmail1" ></textarea>
             </div>
-            <div class="text-center btnContactUs">
+            <div class="text-center btnContactUs custom">
                 <button type="submit" class="btn btn-link border">{{__('custom.send')}}</button>
             </div>
         </form>

@@ -5,7 +5,6 @@ html, body {
     direction: rtl;
     text-align: right !important;
 }
-
 h1 {
     font-size: 32px;
 }
@@ -31,12 +30,27 @@ h6 {
 }
 
 :root {
-    --main-color: linear-gradient(28deg, #16222A, #1E86AF);
+    --main-color: linear-gradient(28deg, #1E86AF, #16222A);
 }
 
 .theme-color {
-    background: var(--main-color);
+    background: linear-gradient(28deg, #16222A, #1E86AF);
     color: white;
+}
+.pageWelcome .howToUse{
+    margin: 50px 0;
+}
+.howToUse .customBorderHowToUse{
+    border-radius: 20px;
+}
+
+.customBorder{
+    border-radius: 20px;
+    border: 1px solid #16222A;
+}
+.customHowToUse{
+    border-radius: 20px;
+    border: 1px solid white;
 }
 
 .theme-color-text {
@@ -46,6 +60,11 @@ h6 {
 .login .buttonlogin button {
     color: white;
 }
+/*pageWelcome*/
+.pageWelcome .customP{
+    margin: 175px 50px;
+}
+/*EndpageWelcome*/
 
 
 /*NavBar Start Css */
@@ -57,16 +76,12 @@ h6 {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
-
-.form-check-input {
-    position: unset !important;
-    margin-left: 0 !important;
+.navbar{
+    background: linear-gradient(28deg, #1E86AF, #16222A);
 }
-
-.loginCustom .card-header span {
-    float: right;
+.navbar .collapse .nav-item i{
+    padding: 0 10px;
 }
-
 .start-header.scroll-on {
     box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
     padding: 10px 0;
@@ -302,8 +317,8 @@ footer {
 
     background: linear-gradient(28deg, #1E86AF, #16222A);
     position: relative;
-    top: 50px;
     left: 0;
+    top: 50px;
     bottom: 0;
     width: 100%;
     color: white;
@@ -414,6 +429,14 @@ ul.social-network li {
 .social-network a {
     background-color: #F9F9F9;
 }
+.pageWelcome .staticImage img {
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+    border-radius: 20px;
+
+}
+
 
 @media screen and (max-width: 675px ) {
     footer {
@@ -481,8 +504,8 @@ ul.social-network li {
     margin-bottom: 10px;
     text-align: center;
     color: white;
+    background: linear-gradient(28deg,  #16222A , #1E86AF);
 
-    background: linear-gradient(28deg, #16222A, #1E86AF);
 
 }
 
@@ -516,6 +539,12 @@ ul.social-network li {
 .auth__social-media .gallery .dropdown-menu > li {
     display: block !important;
 }
+.maessages{
+    margin-bottom: 570px;
+}
+.form-contact-us .custom{
+    margin-bottom: 390px;
+}
 
 @media (min-width: 371px) and (max-width: 768px) {
     .auth__social-media .sites {
@@ -532,6 +561,29 @@ ul.social-network li {
 
     .card .card-body .buttonlogin a.theme-color-text {
         padding: 10px 30px;
+    }
+    .pageWelcome .staticImage img{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .pageWelcome .customP{
+        margin: 75px 50px;
+    }
+    .pageWelcome .howToUse{
+        margin: 25px 0;
+    }
+    footer{
+        top: 0px;
+    }
+    .maessages{
+        margin-bottom: 320px;
+    }
+    .navbar .nav-link{
+        text-align: center;
+    }
+    .registarButton{
+        text-align: center;
     }
 
 }

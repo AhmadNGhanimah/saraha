@@ -3,81 +3,75 @@
     Welcome
 @endsection
 @section('content')
-    <section class="pageWelcome pt-2" id="pageWelcome">
+    <section class="pageWelcome pt-5" id="pageWelcome">
         <div class="row">
             <div class="col-lg-6 col-sm-12  staticImage">
                 <img src="{{asset('image/test2.jpeg')}}" alt="">
             </div>
-            <div class="col-lg-6 col-sm-12  sliderImage">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{asset('assets/images/icons/google.png')}}" alt="First slide">
+            <div class="col-lg-6 col-sm-12  sliderText">
+                <div class="container theme-color customBorder h-100">
+                    <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active text-center">
+                                <p class="customP">lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)</p>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <p class="customP">lorsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{asset('assets/images/icons/google.png')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{asset('assets/images/icons/google.png')}}" alt="Third slide">
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
             </div>
         </div>
-        <div class="howToUse d-flex justify-content-center pt-4 bg_custom">
-            <p>
+        <div class="howToUse d-flex justify-content-center theme-color customBorder  ">
+            <h1>
                 طريقة الاستخدام
-            </p>
+            </h1>
         </div>
-        <div class="d-flex justify-content-center pt-5">
+        <div class="d-flex justify-content-center howToUse">
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-6 col-sm-12 p-2">
-                        <div class="card w-75">
-                            <div class="card-body">
-                                <p class="card-text">يمكنك إنشاء حساب خاص بك بكل سهولة
-                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك  بصراحة وسرية تامة
+                        <div class="card w-100 theme-color customBorderHowToUse">
+                            <div class="card-body ">
+                                <p class="card-text customHowToUse p-2">يمكنك إنشاء حساب خاص بك بكل سهولة
+                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك بصراحة وسرية تامة
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 p-2">
-                        <div class="card w-75">
-                            <div class="card-body">
-                                <p class="card-text">يمكنك إنشاء حساب خاص بك بكل سهولة
-                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك  بصراحة وسرية تامة
+                        <div class="card w-100 theme-color customBorderHowToUse">
+                            <div class="card-body ">
+                                <p class="card-text customHowToUse p-2">يمكنك إنشاء حساب خاص بك بكل سهولة
+                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك بصراحة وسرية تامة
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="w-100"></div>
                     <div class="col-lg-6 col-sm-12 p-2">
-                        <div class="card w-75">
-                            <div class="card-body">
-                                <p class="card-text">يمكنك إنشاء حساب خاص بك بكل سهولة
-                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك  بصراحة وسرية تامة
+                        <div class="card w-100 theme-color customBorderHowToUse">
+                            <div class="card-body ">
+                                <p class="card-text customHowToUse p-2">يمكنك إنشاء حساب خاص بك بكل سهولة
+                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك بصراحة وسرية تامة
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 p-2">
-                        <div class="card w-75">
-                            <div class="card-body">
-                                <p class="card-text">يمكنك إنشاء حساب خاص بك بكل سهولة
-                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك  بصراحة وسرية تامة
+                        <div class="card w-100 theme-color customBorderHowToUse">
+                            <div class="card-body ">
+                                <p class="card-text customHowToUse p-2">يمكنك إنشاء حساب خاص بك بكل سهولة
+                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك بصراحة وسرية تامة
                                 </p>
                             </div>
                         </div>
@@ -87,8 +81,6 @@
 
         </div>
     </section>
-
-
 
 @endsection
 
