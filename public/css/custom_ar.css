@@ -545,6 +545,25 @@ ul.social-network li {
 .form-contact-us .custom{
     margin-bottom: 390px;
 }
+.maessages .customIcons a  {
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+}
+
+.maessages .customIcons a i.twitter{
+    color: #1DA1F2;
+}
+.maessages .customIcons a i.whatsapp{
+    color: #25D366
+;
+}
+.maessages .customIcons a i.facebook{
+    color: #4267B2;
+}
+.maessages button{
+    border-radius: 10px 0px 0px 10px !important;
+}
 
 @media (min-width: 371px) and (max-width: 768px) {
     .auth__social-media .sites {

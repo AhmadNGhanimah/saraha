@@ -437,6 +437,9 @@ ul.social-network li {
     border-radius: 20px;
 
 }
+.maessages button{
+    border-radius: 0px 10px 10px 0px !important;
+}
 
 
 @media screen and (max-width: 675px ) {
@@ -546,7 +549,26 @@ ul.social-network li {
 .form-contact-us .custom{
     margin-bottom: 390px;
 }
+.maessages .customIcons a  {
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+    text-decoration: none;
+}
 
+.maessages .customIcons a i.twitter{
+    color: #1DA1F2;
+}
+.maessages .customIcons a i.whatsapp{
+    color: #25D366
+;
+}
+.maessages .customIcons a i.facebook{
+    color: #4267B2;
+}
+.maessages .customButtonMsg{
+    border-radius: 0px 10px 10px 0px;
+}
 @media (min-width: 371px) and (max-width: 768px) {
     .auth__social-media .sites {
         all: unset;

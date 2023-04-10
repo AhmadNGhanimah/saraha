@@ -11,24 +11,29 @@
                     <div class="text-center namePageBody pt-3">
                         <h1><i class="fa-regular fa-message"></i>@lang('custom.messages')</h1>
                     </div>
-                    <div class="input-group mb-3 ">
+                    <div class="input-group mb-3 customIcons">
                         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" value="{{route('SendMessageView',Auth::user()->random)}}" id="myInput">
                         <div class="input-group-append">
-                            <button class="btn theme-color" onclick="myFunction()" type="button">@lang('custom.shareFriends')</button>
-                            <a href="https://twitter.com/share?url={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
+                            <button class="btn theme-color customButtonMsg" onclick="myFunction()" type="button">@lang('custom.shareFriends')</button>
+                            <div class="justify-content-start d-flex">
+                                <a href="https://twitter.com/share?url={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
+                                    <i class="fa-brands fa-twitter fa-2xl twitter"></i>
+                                </a>
 
-                            <a href="https://www.facebook.com/sharer/sharer.php?u={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
+                                    <i class="fa-brands fa-facebook fa-2xl facebook"></i>
+                                </a>
 
-                            <a href="https://wa.me/?text={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </a>
+                                <a href="https://wa.me/?text={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
+                                    <i class="fa-brands fa-whatsapp fa-2xl whatsapp"></i>
 
+                                </a>
+                            </div>
                         </div>
+
+
                     </div>
+
                     @if($messages->count()>0)
                         @foreach($messages as $message)
                             <div class="card mb-2">
