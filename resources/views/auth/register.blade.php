@@ -10,9 +10,8 @@
                 <div class="card-header">@lang('custom.register') </div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="post" action="{{ route('register') }}">
                         @csrf
-
                         <div class="row mb-3">
                             <label for="name" class="col-md-4 col-form-label text-md-end">@lang('custom.name')</label>
 

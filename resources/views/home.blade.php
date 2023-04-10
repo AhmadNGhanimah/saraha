@@ -15,6 +15,18 @@
                         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" value="{{route('SendMessageView',Auth::user()->random)}}" id="myInput">
                         <div class="input-group-append">
                             <button class="btn theme-color" onclick="myFunction()" type="button">@lang('custom.shareFriends')</button>
+                            <a href="https://twitter.com/share?url={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+
+                            <a href="https://wa.me/?text={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+
                         </div>
                     </div>
                     @if($messages->count()>0)

@@ -59,9 +59,8 @@
                     </div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('login') }}">
+                        <form method="post" action="{{ route('login') }}">
                             @csrf
-
                             <div class="row mb-3">
                                 <label for="email" class="col-md-4 col-form-label text-md-end">@lang('custom.email_adress')</label>
 
@@ -90,17 +89,8 @@
                                 </div>
                             </div>
 
-                            <div class="row mb-3">
-                                <div class="col-md-6 offset-md-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                            <input class="d-none" type="checkbox" name="remember" id="remember" checked>
 
-                                        <label class="form-check-label" for="remember">
-                                            @lang('custom.remember_me')
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="row mb-0 buttonlogin">
                                 <div class="col-md-8 offset-md-4">
                                     <button type="submit" class="btn theme-color">

@@ -22,7 +22,7 @@ return [
     'resetPassword' => 'Reset Password',
     'weCantFind' => 'We cant find a user with that email address.',
     'messages' => 'Messages',
-    'shareFriends' => 'The Messages',
+    'shareFriends' => 'Copy Link',
     'theTextCopied ' => 'The Text Copied ',
     'theMessageFor' => 'The Message For',
     'send' => 'Send',

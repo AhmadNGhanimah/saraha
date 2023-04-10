@@ -23,7 +23,7 @@ return [
     'resetPassword'=>'إعادة تعيين كلمة المرور',
     'weCantFind'=>'لا يمكننا العثور على مستخدم بعنوان البريد الإلكتروني هذا.',
     'messages'=>'الرسائل',
-    'shareFriends'=>'شارك مع الاصدقاء',
+    'shareFriends'=>'نسخ الرابط',
     'theTextCopied '=>'تم نسخ الرابط',
     'theMessageFor'=>'الرسالة ل',
     'send'=>'ارسال',
