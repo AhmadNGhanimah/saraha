@@ -6,27 +6,27 @@
     <section class="pageWelcome pt-5" id="pageWelcome">
         <div class="row">
             <div class="col-lg-6 col-sm-12  staticImage">
-                <img src="{{asset('image/test2.jpeg')}}" alt="">
+                <img src="{{asset('image/home.png')}}" alt="">
             </div>
             <div class="col-lg-6 col-sm-12  sliderText">
                 <div class="container theme-color customBorder h-100">
                     <div id="carouselContent" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active text-center">
-                                <p class="customP">lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)</p>
+                                <p class="customP">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. </p>
                             </div>
                             <div class="carousel-item text-center">
-                                <p class="customP">lorsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)lorem ipsum (imagine longer text)</p>
+                                <p class="customP">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. </p>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+{{--                        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">--}}
+{{--                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>--}}
+{{--                            <span class="sr-only">Previous</span>--}}
+{{--                        </a>--}}
+{{--                        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">--}}
+{{--                            <span class="carousel-control-next-icon" aria-hidden="true"></span>--}}
+{{--                            <span class="sr-only">Next</span>--}}
+{{--                        </a>--}}
                     </div>
                 </div>
             </div>

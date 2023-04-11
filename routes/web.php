@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('messages');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('messages');
 //Route::get('/favourite/{MessageID}',[App\Http\Controllers\HomeController::class,'favourite'])->name('favourite');
 
 Route::get('/user/{UserID}', [App\Http\Controllers\HomeController::class, 'SendMessage'])->name('SendMessageView');

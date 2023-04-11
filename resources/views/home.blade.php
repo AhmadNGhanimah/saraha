@@ -11,10 +11,14 @@
                     <div class="text-center namePageBody pt-3">
                         <h1><i class="fa-regular fa-message"></i>@lang('custom.messages')</h1>
                     </div>
+                    <div class="alert alert-success" id="success-alert" style="display: none">
+                        تم النسخ
+                    </div>
                     <div class="input-group mb-3 customIcons">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" value="{{route('SendMessageView',Auth::user()->random)}}" id="myInput">
+                        <input type="text" class="form-control" id="my-link" value="{{route('SendMessageView',Auth::user()->random)}}" >
                         <div class="input-group-append">
-                            <button class="btn theme-color customButtonMsg" onclick="myFunction()" type="button">@lang('custom.shareFriends')</button>
+                            <button class="btn theme-color customButtonMsg" data-clipboard-target="#my-link"   type="button">@lang('custom.shareFriends')</button>
+
                             <div class="justify-content-start d-flex">
                                 <a href="https://twitter.com/share?url={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
                                     <i class="fa-brands fa-twitter fa-2xl twitter"></i>
@@ -30,7 +34,6 @@
                                 </a>
                             </div>
                         </div>
-
 
                     </div>
 
@@ -59,20 +62,19 @@
     </div>
 
 </div>
-@endsection
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-    function myFunction() {
-        // Get the text field
-        var copyText = document.getElementById("myInput");
+    var clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function(e) {
+        $("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
+            $("#success-alert").slideUp(500);
+        });
+        e.clearSelection();
+    });
 
-        // Select the text field
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); // For mobile devices
+    clipboard.on('error', function(e) {
 
-        // Copy the text inside the text field
-        navigator.clipboard.writeText(copyText.value);
-
-        // Alert the copied text
-        alert("The Text Copied ");
-    }
+    });
 </script>
+@endsection
+

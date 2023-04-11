@@ -18,7 +18,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except(['SendMessage','SentMessage','ChangeLang']);
+        $this->middleware('auth')->except(['SendMessage','index','SentMessage','ChangeLang']);
     }
 
     /**
@@ -26,7 +26,13 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+
     public function index()
+    {
+        return view('first');
+    }
+    public function home()
     {
         $messages = Message::where('user_id', Auth::user()->id)->orderBy('created_at','desc')->get();
         return view('home', ['messages' => $messages]);
