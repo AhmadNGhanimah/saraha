@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Welcome
+{{__('custom.title')}}
 @endsection
 @section('content')
     <section class="pageWelcome pt-5" id="pageWelcome">

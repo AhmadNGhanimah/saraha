@@ -7,7 +7,6 @@
     <div class="col-lg-12">
         <section class="maessages">
             <div class="container-fluid">
-                <div>
                     <div class="text-center namePageBody pt-3">
                         <h1><i class="fa-regular fa-message"></i>@lang('custom.messages')</h1>
                     </div>
@@ -15,10 +14,12 @@
                         تم النسخ
                     </div>
                     <div class="input-group mb-3 customIcons">
-                        <input type="text" class="form-control" id="my-link" value="{{route('SendMessageView',Auth::user()->random)}}" >
-                        <div class="input-group-append">
-                            <button class="btn theme-color customButtonMsg" data-clipboard-target="#my-link"   type="button">@lang('custom.shareFriends')</button>
 
+
+                        <input type="text" class="form-control" id="my-link" value="{{route('SendMessageView',Auth::user()->random)}}" >
+                        <button class="btn theme-color customButtonMsg" data-clipboard-target="#my-link"   type="button">@lang('custom.shareFriends')</button>
+
+                        <div class="input-group-append">
                             <div class="justify-content-start d-flex">
                                 <a href="https://twitter.com/share?url={{route('SendMessageView',Auth::user()->random)}}" target="_blank">
                                     <i class="fa-brands fa-twitter fa-2xl twitter"></i>
@@ -34,7 +35,6 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
 
                     @if($messages->count()>0)
@@ -42,26 +42,18 @@
                             <div class="card mb-2">
                                 <div class="card-body">
                                     {{$message->message}}
-                                    <div>
+                                    <br>
                                     <small class="pb-3 text-secondary">{{$message->created_at}}</small>
 {{--                                        <a href="{{route('favourite',$message->id)}}">@if($message->favourite)<i class="fa-solid fa-heart"></i> @else <i class="fa-regular fa-heart"></i> @endif</a>--}}
-                                    </div>
                                 </div>
                             </div>
-
                         @endforeach
                     @endif
-
-
-                </div>
             </div>
-
         </section>
-
-
     </div>
-
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     var clipboard = new ClipboardJS('.btn');
