@@ -67,6 +67,8 @@ return [
     'follow_us'=>'Follow Us',
     'click_here'=>'Click Here',
     'share_with'=>'Share With :',
+    'that_copy'=>'Copied',
+
 
 
 //    ----------------Privacy End

@@ -9,36 +9,37 @@
                 <h1><i class="fa-regular fa-message"></i>@lang('custom.messages')</h1>
             </div>
             <div class="alert alert-success" id="success-alert" style="display: none">
-                تم النسخ
+                @lang('custom.that_copy')
             </div>
             <div class="customIcons">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12 d-flex">
-                        <div class="input-group mb-3">
+                    <div class="col-lg-6 col-sm-12 ">
+                        <div class="input-group mb-3 d-flex">
                             <input type="text" class="form-control" id="my-link"
                                    value="{{route('SendMessageView',Auth::user()->random)}}">
                             <button class="btn theme-color customButtonMsg" data-clipboard-target="#my-link"
                                     type="button">@lang('custom.shareFriends')</button>
+
+                        </div>
+                        <div class="justify-content-center align-items-center d-flex">
+                            <p class="">@lang('custom.share_with')</p>
+                            <div class="d-flex">
+                                <a href="https://twitter.com/share?url={{route('SendMessageView',Auth::user()->random)}}"
+                                   target="_blank">
+                                    <i class="fa-brands fa-twitter fa-2xl twitter"></i>
+                                </a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{route('SendMessageView',Auth::user()->random)}}"
+                                   target="_blank">
+                                    <i class="fa-brands fa-facebook fa-2xl facebook"></i>
+                                </a>
+
+                                <a href="https://wa.me/?text={{route('SendMessageView',Auth::user()->random)}}"
+                                   target="_blank">
+                                    <i class="fa-brands fa-whatsapp fa-2xl whatsapp"></i>
+                                </a>
+                            </div>
                         </div>
 
-                    </div>
-                    <div class="col-lg-6 col-sm-12 d-flex align-items-center justify-content-center">
-                        <p class="">@lang('custom.share_with')</p>
-                      <div class="justify-content-start align-items-center d-flex">
-                          <a href="https://twitter.com/share?url={{route('SendMessageView',Auth::user()->random)}}"
-                             target="_blank">
-                              <i class="fa-brands fa-twitter fa-2xl twitter"></i>
-                          </a>
-                          <a href="https://www.facebook.com/sharer/sharer.php?u={{route('SendMessageView',Auth::user()->random)}}"
-                             target="_blank">
-                              <i class="fa-brands fa-facebook fa-2xl facebook"></i>
-                          </a>
-
-                          <a href="https://wa.me/?text={{route('SendMessageView',Auth::user()->random)}}"
-                             target="_blank">
-                              <i class="fa-brands fa-whatsapp fa-2xl whatsapp"></i>
-                          </a>
-                      </div>
                     </div>
                 </div>
             </div>

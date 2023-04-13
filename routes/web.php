@@ -21,6 +21,7 @@ Route::get('login/callback/{provider}', [SocialController::class, 'Callback']);
 Route::get('language/{Lang}', [\App\Http\Controllers\HomeController::class, 'ChangeLang'])->name('lang');
 Route::view('privacy', 'privacy')->name('privacy');
 Route::view('standard-first', 'first');
+Route::view('terms', 'terms')->name('terms');
 
 //Route::view('messages','messages');
 //Route::view('sidebar','layouts/sidebar');
