@@ -8,7 +8,7 @@
             <div class="text-center namePageBody pt-3">
                 <h1><i class="fa-regular fa-message"></i>@lang('custom.messages')</h1>
             </div>
-            <div class="alert alert-success" id="success-alert" style="display: none">
+            <div class="alert alert-success text-center font-weight-bold" id="success-alert" style="display: none">
                 @lang('custom.that_copy')
             </div>
             <div class="customIcons">
