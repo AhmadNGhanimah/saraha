@@ -68,6 +68,7 @@ return [
     'click_here'=>'اضعط هنا',
     'share_with'=>'للمشاركه عبر :',
     'that_copy'=>'تم النسخ',
+    'sent'=>'تم الارسال',
 //    ----------------Privacy End
 
 
