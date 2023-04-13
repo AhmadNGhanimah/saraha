@@ -468,6 +468,9 @@ ul.social-network li {
 .mainfooter .hidden {
     display: none;
 }
+.mainfooter .footer-middle .custom{
+    font-size: 20px;
+}
 
 
 .auth__social-media {

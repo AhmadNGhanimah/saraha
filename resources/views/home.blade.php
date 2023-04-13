@@ -13,6 +13,9 @@
             </div>
             <div class="customIcons">
                 <div class="row">
+                    <div class="col-lg-3">
+
+                    </div>
                     <div class="col-lg-6 col-sm-12 ">
                         <div class="input-group mb-3 d-flex">
                             <input type="text" class="form-control" id="my-link"
@@ -22,7 +25,7 @@
 
                         </div>
                         <div class="justify-content-center align-items-center d-flex">
-                            <p class="">@lang('custom.share_with')</p>
+                            <p class="pt-3">@lang('custom.share_with')</p>
                             <div class="d-flex">
                                 <a href="https://twitter.com/share?url={{route('SendMessageView',Auth::user()->random)}}"
                                    target="_blank">
@@ -41,22 +44,31 @@
                         </div>
 
                     </div>
+                    <div class="col-lg-3">
+
+                    </div>
                 </div>
             </div>
-            <div>
-                @if($messages->count()>0)
-                    @foreach($messages as $message)
-                        <div class="card mt-2">
-                            <div class="card-body">
-                                {{$message->message}}
-                                <br>
-                                <small class="pb-3 text-secondary">{{$message->created_at}}</small>
-                                {{--                                        <a href="{{route('favourite',$message->id)}}">@if($message->favourite)<i class="fa-solid fa-heart"></i> @else <i class="fa-regular fa-heart"></i> @endif</a>--}}
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+
+                    @if($messages->count()>0)
+                        @foreach($messages as $message)
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    {{$message->message}}
+                                    <br>
+                                    <small class="pb-3 text-secondary">{{$message->created_at}}</small>
+                                    {{--                                        <a href="{{route('favourite',$message->id)}}">@if($message->favourite)<i class="fa-solid fa-heart"></i> @else <i class="fa-regular fa-heart"></i> @endif</a>--}}
+                                </div>
                             </div>
-                        </div>
-                    @endforeach
-                @endif
+                        @endforeach
+                    @endif
+                </div>
+                <div class="col-lg-3"></div>
             </div>
+
 
         </div>
     </section>
