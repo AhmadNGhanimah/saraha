@@ -554,6 +554,9 @@ ul.social-network li {
 .maessages .customIcons a i.twitter{
     color: #1DA1F2;
 }
+.maessages .customIcons a{
+    text-decoration:none !important;
+}
 .maessages .customIcons a i.whatsapp{
     color: #25D366
 ;
@@ -561,10 +564,13 @@ ul.social-network li {
 .maessages .customIcons a i.facebook{
     color: #4267B2;
 }
-.maessages button{
-    border-radius: 10px 0px 0px 10px !important;
-}
 
+.registar .customRegistar{
+    padding: 196px 0 150px 0 ;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
 @media (min-width: 371px) and (max-width: 768px) {
     .auth__social-media .sites {
         all: unset;

@@ -43,6 +43,12 @@
     .fb-light-blue {
         color: #adb9d3;
     }
+    .login .loginCustom{
+        padding: 196px 0 150px 0 !important;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
 
 
 
@@ -50,7 +56,7 @@
 
 </style>
 @section('content')
-    <div class="container login p-5">
+    <div class="container login">
         <div class="row justify-content-center loginCustom">
             <div class="col-md-8">
                 <div class="card">

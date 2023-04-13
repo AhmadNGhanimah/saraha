@@ -3,8 +3,8 @@
     @lang('custom.register')
 @endsection
 @section('content')
-<div class="container registar p-5">
-    <div class="row justify-content-center">
+<div class="container registar">
+    <div class="row justify-content-center customRegistar">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">@lang('custom.register') </div>

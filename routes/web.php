@@ -19,7 +19,7 @@ Route::get('login/callback/{provider}', [SocialController::class, 'Callback']);
 
 // Change Language
 Route::get('language/{Lang}', [\App\Http\Controllers\HomeController::class, 'ChangeLang'])->name('lang');
-Route::view('privacy', 'privacy');
+Route::view('privacy', 'privacy')->name('privacy');
 Route::view('standard-first', 'first');
 
 //Route::view('messages','messages');
