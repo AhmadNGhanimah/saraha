@@ -68,7 +68,7 @@ return [
     'click_here'=>'Click Here',
     'share_with'=>'Share With :',
     'that_copy'=>'Copied',
-
+    'sent'=>'Sent Successfully',
 
 
 //    ----------------Privacy End
