@@ -12,12 +12,14 @@
                 <div class="container theme-color customBorder h-100">
                     <div id="carouselContent" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active text-center">
-                                <p class="customP">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. </p>
+                            <div class="carousel-item active text-center text-capitalize">
+                                
+                                <p class="customP">@lang('custom.join_for_free') </p>
                             </div>
                             <div class="carousel-item text-center">
                                 <p class="customP">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. </p>
                             </div>
+
                         </div>
 {{--                        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">--}}
 {{--                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>--}}
@@ -33,7 +35,7 @@
         </div>
         <div class="howToUse d-flex justify-content-center theme-color customBorder  ">
             <h1>
-                طريقة الاستخدام
+                @lang('custom.how_to_use')
             </h1>
         </div>
         <div class="d-flex justify-content-center howToUse">
@@ -42,18 +44,14 @@
                     <div class="col-lg-6 col-sm-12 p-2">
                         <div class="card w-100 theme-color customBorderHowToUse">
                             <div class="card-body ">
-                                <p class="card-text customHowToUse p-2">يمكنك إنشاء حساب خاص بك بكل سهولة
-                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك بصراحة وسرية تامة
-                                </p>
+                                <p class="card-text customHowToUse p-2">@lang('custom.f-step')</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 p-2">
                         <div class="card w-100 theme-color customBorderHowToUse">
                             <div class="card-body ">
-                                <p class="card-text customHowToUse p-2">يمكنك إنشاء حساب خاص بك بكل سهولة
-                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك بصراحة وسرية تامة
-                                </p>
+                                <p class="card-text customHowToUse p-2">@lang('custom.sec_step')</p>
                             </div>
                         </div>
                     </div>
@@ -61,8 +59,7 @@
                     <div class="col-lg-6 col-sm-12 p-2">
                         <div class="card w-100 theme-color customBorderHowToUse">
                             <div class="card-body ">
-                                <p class="card-text customHowToUse p-2">يمكنك إنشاء حساب خاص بك بكل سهولة
-                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك بصراحة وسرية تامة
+                                <p class="card-text customHowToUse p-2">@lang('custom.third_step')
                                 </p>
                             </div>
                         </div>
@@ -70,9 +67,7 @@
                     <div class="col-lg-6 col-sm-12 p-2">
                         <div class="card w-100 theme-color customBorderHowToUse">
                             <div class="card-body ">
-                                <p class="card-text customHowToUse p-2">يمكنك إنشاء حساب خاص بك بكل سهولة
-                                    سيكتب الأصدقاء والآخرون رأيهم الشخصي و الصادق عنك بصراحة وسرية تامة
-                                </p>
+                                <p class="card-text customHowToUse p-2">@lang('custom.forth_step')</p>
                             </div>
                         </div>
                     </div>

@@ -571,6 +571,10 @@ ul.social-network li {
     justify-content: start;
     align-items: center;
 }
+.pageWelcome .howToUse .customBorderHowToUse p{
+    font-size: 15px;
+    height: 70px;
+}
 @media (min-width: 371px) and (max-width: 768px) {
     .auth__social-media .sites {
         all: unset;
