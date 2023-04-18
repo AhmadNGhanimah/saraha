@@ -30,7 +30,7 @@ class SocialController extends Controller
         } else {
             $user = new User();
             $user->name = $userSocial->getName();
-            $user->email = $userSocial->getEmail();
+            $user->email = $email;
 
             if ($provider == 'facebook')
                 $user->facebook_id = $userSocial->getId();
