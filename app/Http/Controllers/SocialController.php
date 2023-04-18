@@ -16,11 +16,14 @@ class SocialController extends Controller
 
     public function Callback($provider)
     {
-        $userSocial = Socialite::driver($provider)->stateless()->user();
-        if(empty($userSocial->getEmail()))
-            return redirect()->route('register')->with('error','Try with another account');
 
-        $users = User::where(['email' => $userSocial->getEmail()])->first();
+        $userSocial = Socialite::driver($provider)->stateless()->user();
+        $email=$userSocial->getEmail();
+        if(empty($email))
+            $email=$userSocial->getId().'@'.$provider.'com';
+
+        $users = User::where([$provider.'_id' => $userSocial->getId()])->first();
+//        $users = User::where(['email' => $userSocial->getEmail()])->first();
         if ($users) {
             Auth::login($users);
             return redirect()->route('messages');
