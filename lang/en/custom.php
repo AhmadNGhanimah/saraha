@@ -75,10 +75,14 @@ Friends and others will write their personal and honest opinion of you openly an
 The messages you receive are private to you and only you, and only you can see them',
     'forth_step' => '4-You can choose to make messages public to everyone, and thus you will allow others to view them.',
     'how_to_use' => 'How to use ',
-    'join_for_free' => 'join for free
+    'join_for_free' => '
 Do you think that anonymous messages may carry hidden messages?
 Share your account with the social network, start receiving messages, and friends and everyone around you will write their opinion openly and confidentially
 Go ahead and have fun in the hidden chat and don\'t waste time',
+    'or_use_one_of_these'=>'Or use one of these options',
+    'continue_with_google'=>'Continue with a Google Account ',
+    'continue_with_facebook'=>'Continue with a Facebook Account',
+
 
 
 //    ----------------Privacy End

@@ -85,19 +85,20 @@
 
                         <div class="auth__social-media">
                             <p>
-                                <span> أو استخدم إحدى هذه الخيارات</span>
+                                <span>@lang('custom.or_use_one_of_these')</span>
                             </p>
 
                             <div class="sites">
                                 <a href="{{route('social_login','google')}}">
                                     <span>
-                                        المتابعة باستخدام حساب Google
+                                       @lang('custom.continue_with_google')
+
                                     </span>
                                     <img src="{{asset('/assets/images/icons/google.png')}}" alt="google">
                                 </a>
                                 <a href="{{route('social_login','facebook')}}">
                                    <span>
-                                        المتابعة باستخدام حساب Facebook
+                                       @lang('custom.continue_with_facebook')
                                     </span>
                                     <img src="{{asset('/assets/images/icons/facebook.png')}}" alt="facebook">
                                 </a>

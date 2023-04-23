@@ -10,7 +10,7 @@
     }
 
     .bg-fb-blue {
-    background: linear-gradient(28deg, #16222A, #1E86AF)
+        background: linear-gradient(28deg, #16222A, #1E86AF)
     }
 
     small.form-text.text-muted a {
@@ -37,21 +37,19 @@
     }
 
     .far, .fas, .fb-icon {
-        color: #adb9d3!important;
+        color: #adb9d3 !important;
     }
 
     .fb-light-blue {
         color: #adb9d3;
     }
-    .login .loginCustom{
+
+    .login .loginCustom {
         padding: 196px 0 150px 0 !important;
         display: flex;
         justify-content: start;
         align-items: center;
     }
-
-
-
 
 
 </style>
@@ -68,10 +66,13 @@
                         <form method="post" action="{{ route('login') }}">
                             @csrf
                             <div class="row mb-3">
-                                <label for="email" class="col-md-4 col-form-label text-md-end">@lang('custom.email_adress')</label>
+                                <label for="email"
+                                       class="col-md-4 col-form-label text-md-end">@lang('custom.email_adress')</label>
 
                                 <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                    <input id="email" type="email"
+                                           class="form-control @error('email') is-invalid @enderror" name="email"
+                                           value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                     @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -82,10 +83,13 @@
                             </div>
 
                             <div class="row mb-3">
-                                <label for="password" class="col-md-4 col-form-label text-md-end">@lang('custom.password')</label>
+                                <label for="password"
+                                       class="col-md-4 col-form-label text-md-end">@lang('custom.password')</label>
 
                                 <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                    <input id="password" type="password"
+                                           class="form-control @error('password') is-invalid @enderror" name="password"
+                                           required autocomplete="current-password">
 
                                     @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -112,18 +116,20 @@
                             </div>
                             <div class="auth__social-media">
                                 <p>
-                                    <span> أو استخدم إحدى هذه الخيارات</span>
+                                    <span>@lang('custom.or_use_one_of_these')</span>
                                 </p>
                                 <div class="sites">
                                     <a href="{{route('social_login','google')}}">
-                                    <span>
-                                        المتابعة باستخدام حساب Google
+                                     <span>
+@lang('custom.continue_with_google')
                                     </span>
-                                        <img src="{{asset('/assets/images/icons/google.png')}}" alt="google">
+                                        <img class="p-2" src="{{asset('/assets/images/icons/google.png')}}"
+                                             alt="google">
+
                                     </a>
                                     <a href="{{route('social_login','facebook')}}">
-                                   <span>
-                                        المتابعة باستخدام حساب Facebook
+                                        <span>
+@lang('custom.continue_with_facebook')
                                     </span>
                                         <img src="{{asset('/assets/images/icons/facebook.png')}}" alt="facebook">
                                     </a>

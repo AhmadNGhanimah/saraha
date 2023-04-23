@@ -41,8 +41,8 @@ class AppServiceProvider extends ServiceProvider
 
             // Default Language
             else
-                App::setlocale('ar');
+                App::setlocale('en');
         } else
-            App::setlocale('ar');
+            App::setlocale('en');
     }
 }
